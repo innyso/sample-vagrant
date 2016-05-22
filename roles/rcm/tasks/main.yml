@@ -8,4 +8,5 @@
   - name: initial run of rcup
     environment:
       RCRC: /home/vagrant/dotfiles/rcrc
+    become_user: vagrant
     command: rcup -f
