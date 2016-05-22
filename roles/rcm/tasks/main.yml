@@ -7,5 +7,5 @@
 
   - name: initial run of rcup
     environment:
-      RCRC: /home/vagrant/dotfiles
+      RCRC: /home/vagrant/dotfiles/rcrc
     command: rcup -f
