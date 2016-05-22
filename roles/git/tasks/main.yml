@@ -1,0 +1,8 @@
+---
+ - name: install git
+   sudo: yes
+   apt: pkg=git state=present
+
+ - name: this should be in git for setting alias
+   template: src=gitconfig.j2 dest=/home/vagrant/.gitconfig
+

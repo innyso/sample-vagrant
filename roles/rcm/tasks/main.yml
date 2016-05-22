@@ -1,0 +1,11 @@
+---
+  - name: add rcm repo
+    apt_repository: repo="ppa:martin-frost/thoughtbot-rcm"
+
+  - name: install rcm
+    apt: pkg=rcm state=present update_cache=yes
+
+  - name: initial run of rcup
+    environment:
+      RCRC: /home/vagrant/dotfiles
+    command: rcup -f
